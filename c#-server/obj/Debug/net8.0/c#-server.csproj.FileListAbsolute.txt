@@ -3,3 +3,13 @@ C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.Asse
 C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.AssemblyInfo.cs
 C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.csproj.CoreCompileInputs.cache
 C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.sourcelink.json
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\bin\Debug\net8.0\c#-server.exe
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\bin\Debug\net8.0\c#-server.deps.json
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\bin\Debug\net8.0\c#-server.runtimeconfig.json
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\bin\Debug\net8.0\c#-server.dll
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\bin\Debug\net8.0\c#-server.pdb
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.dll
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\refint\c#-server.dll
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.pdb
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.genruntimeconfig.cache
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\ref\c#-server.dll

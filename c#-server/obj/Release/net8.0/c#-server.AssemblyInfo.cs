@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("c#-server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a2507b2faea4a5964ebf840c113dc3a9ab329d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e412fe91bf2d84282dcf57ec5d3c0df4e1336ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("c#-server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("c#-server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

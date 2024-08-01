@@ -1,25 +1,44 @@
 ﻿using System;
-using System.net;
-using System.net.Sockets;
-using System.Net.Sockets;
 using System.Net;
-using System.text;
+using System.Net.Sockets;
+using System.Text;
 using System.Threading.Tasks;
 
-class Programm
+class Program
 {
-    private const int PORT = 3500;
+    private const int PORT = 8080;
 
     static async Task Main(string[] args)
     {
         TcpListener server = new TcpListener(IPAddress.Any, PORT);
         server.Start();
-        Console.WriteLine($"Сервер заущен на порту {PORT}");
+        Console.WriteLine($"Сервер запущен на порту {PORT}");
 
         while (true)
         {
-            var client = await server.AcceptTcpClientAsinc();
+            var client = await server.AcceptTcpClientAsync();
             _ = HandleClientAsync(client);
         }
+    }
+
+    private static async Task HandleClientAsync(TcpClient client)
+    {
+        Console.WriteLine("Клиент подключен.");
+        var buffer = new byte[1024];
+        var stream = client.GetStream();
+
+        // Чтение данных от клиента
+        int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
+        string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+        Console.WriteLine($"Получено сообщение: {message}");
+
+        // Отправка ответа клиенту
+        string response = "Привет от сервера!";
+        byte[] responseBytes = Encoding.UTF8.GetBytes(response);
+        await stream.WriteAsync(responseBytes, 0, responseBytes.Length);
+
+        // Закрытие соединения
+        client.Close();
+        Console.WriteLine("Соединение с клиентом закрыто.");
     }
 }
