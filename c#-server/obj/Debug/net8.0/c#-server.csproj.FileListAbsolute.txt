@@ -1,0 +1,5 @@
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.AssemblyInfoInputs.cache
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.AssemblyInfo.cs
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.csproj.CoreCompileInputs.cache
+C:\Users\x260\Desktop\git-projectas\mb\c#-server\obj\Debug\net8.0\c#-server.sourcelink.json
