@@ -1,20 +1,7 @@
-#progma once
-#include <iostream>
+#ifndef MYLIB_H
+#define MYLIB_H
 
-using namespace std;
+void add(int a, int b);
+int getResult();
 
-namespace out()
-{
-    void strout(string string)
-    {
-        cout  << string << endl;
-    }
-}
-namespace math()
-{
-    template <typename T>
-    T sum(T value1, T value2)
-    {
-        value1 + value2
-    }
-}
+#endif
