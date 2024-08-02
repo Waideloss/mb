@@ -1,3 +1,4 @@
+#progma once
 #include <iostream>
 
 using namespace std;
