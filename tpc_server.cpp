@@ -13,7 +13,7 @@
 
 using namespace std;
 
-struct serverConfig {
+struct ServerConfig {
     std::string ip;
     int port;
 };
@@ -24,19 +24,20 @@ ServerConfig readServerConfig(const std::string& configFile) {
     file >> jsonConfig;
 
     ServerConfig config;
-    config.ip = jsconConfig["ip"];
-    config.port = jsconConfig["port"];
+    config.ip = jsonConfig["ip"];
+    config.port = jsonConfig["port"];
 
     return config;
 }
 
-struct sockadd_in serverAddress;
-serverAddress.sin_family = AF_INET; // юзаем в4 айпи
-serverAddress.sin_addr.s_addr = INADDR_ANY; // ловим соединение на любом интерфейсе
 
-serverAddress.sin_port = htons(port);   // задаем порт
+struct sockaddr_in serverAddress;
+serverAddress.sin_family = AF_INET; // юзаем в4 айпи
+serverAddress.sin_addr.s_addr = inet_addr(config.server_ip.c_str()); // ловим соединение на любом интерфейсе
+serverAddress.sin_port = htons(config.server_port);   // задаем порт
 
 int main(){ 
+    ServerConfig config = readServerConfig("server_config.json")
  int listener = socket(AF_INET, SOCK_STREAM, 0);
  std::cout << "Server work" << std::endl; 
  return 0;
